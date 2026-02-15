@@ -1,6 +1,7 @@
 __pycache__/
 *.pyc
 .env
+.venv/
 .vscode/
 data/*.csv
 !data/sample_gold.csv
