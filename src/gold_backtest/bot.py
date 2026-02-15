@@ -12,7 +12,8 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-from data_polygon import PolygonData
+from .data_polygon import PolygonData
+
 
 
 # =========================
@@ -418,7 +419,15 @@ def run_backtest():
     plt.title("Equity Curve")
     plt.tight_layout()
     plt.show()
+# -------------------------------------------------
+# MAIN ENTRYPOINT (NEW)
+# -------------------------------------------------
+def main():
+    """
+    Project entrypoint used by run.py and external tools.
+    """
+    run_backtest()
 
 
 if __name__ == "__main__":
-    run_backtest()
+    main()

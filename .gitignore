@@ -5,3 +5,6 @@ __pycache__/
 .vscode/
 data/*.csv
 !data/sample_gold.csv
+debug_market_data.csv
+
+
